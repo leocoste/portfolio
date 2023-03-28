@@ -614,7 +614,7 @@ body:not(.user-is-tabbing) a:focus {
 .competences{
     background-color:#111111;
     margin: 0.5em;
-    width : 40vh;
+    width : 35vh;
     flex-wrap: wrap;
     border-radius: 20px;
     transition-duration: 0.5s;
