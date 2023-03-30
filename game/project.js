@@ -444,7 +444,6 @@ window.addEventListener('keydown',(e)=>{
             console.log("speed");
             break;
         case 'Escape':
-            isBlocked = !isBlocked;
             document.location.href="../index.html";
             break;
     }
