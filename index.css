@@ -562,6 +562,14 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.about strong{
+   color: #e9647c;
+}
+
+.about p{
+    text-align: justify;
+}
+
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
@@ -620,6 +628,7 @@ body:not(.user-is-tabbing) a:focus {
     transition-duration: 0.5s;
     padding: 1em;
 }
+
 .competences:hover{
     transition-duration: 0.5s;
     box-shadow: #ff3258 0px 0px 20px;
