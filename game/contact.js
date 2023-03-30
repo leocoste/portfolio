@@ -38,6 +38,33 @@ entriesmap.forEach((row, i) => {
             destination:"map"
         })
         );
+        if (symbol ===2)Entries.push(new Entryroom({
+            position:{
+                x: j*Entryroom.width + offset.x,
+                y: i*Entryroom.height + offset.y
+            },
+            color:"green",
+            destination:"contact for job"
+        })
+        );
+        if (symbol ===3)Entries.push(new Entryroom({
+            position:{
+                x: j*Entryroom.width + offset.x,
+                y: i*Entryroom.height + offset.y
+            },
+            color:"blue",
+            destination:"contact fo questions"
+        })
+        );
+        if (symbol ===4)Entries.push(new Entryroom({
+            position:{
+                x: j*Entryroom.width + offset.x,
+                y: i*Entryroom.height + offset.y
+            },
+            color:"pink",
+            destination:"contact for others"
+        })
+        );
     })
 })
 
@@ -338,6 +365,15 @@ function animate(){
 function redirection(entry){
     if(entry.color=="black"){
         document.location.href="index.html";
+    }
+    if(entry.color=="green"){
+        document.location.href="mailto:?to=leo.coste0605@gmail.com &subject=Contact%20for%20job";
+    }
+    if(entry.color=="blue"){
+        document.location.href="mailto:?to=leo.coste0605@gmail.com &subject=Contact%20for%20request%20or%20questions";
+    }
+    if(entry.color=="pink"){
+        document.location.href="mailto:?to=leo.coste0605@gmail.com &subject=Contact%20for%20others...";
     }
 }
 
