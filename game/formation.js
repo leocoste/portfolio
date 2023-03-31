@@ -22,7 +22,7 @@ const offset = {
 
 entriesmap.forEach((row, i) => {
     row.forEach((symbol, j)=>{
-        if (symbol ===760)Bondaries.push(new Bondaryroom({
+        if (symbol ===2656)Bondaries.push(new Bondaryroom({
             position:{
                 x: j*Bondaryroom.width + offset.x,
                 y: i*Bondaryroom.height + offset.y
@@ -42,10 +42,10 @@ entriesmap.forEach((row, i) => {
 })
 
 const foregroundImage = new Image();
-foregroundImage.src ='./assets/img/aboutme/foregroundObjects.png';
+foregroundImage.src ='./assets/img/formation/foreground.png';
 
 const mapImage = new Image();
-mapImage.src ='./assets/img/aboutme/map.png';
+mapImage.src ='./assets/img/formation/map.png';
 
 const brakeImage = new Image();
 brakeImage.src ='./assets/img/brake.png';
