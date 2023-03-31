@@ -517,6 +517,12 @@ body:not(.user-is-tabbing) a:focus {
 .client__logo {
     height: 6.5rem;
     max-width: 18rem;
+    transition-duration: 0.2s;
+}
+
+.client__logo:hover{
+    transition-duration: 0.2s;
+    filter: invert(1) grayscale(1);
 }
 
 @media(max-width: 1240px) {
@@ -560,6 +566,10 @@ body:not(.user-is-tabbing) a:focus {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
     }
+}
+
+.about__photo {
+    width: 100%;
 }
 
 .about strong{
