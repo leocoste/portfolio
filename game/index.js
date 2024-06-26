@@ -1,8 +1,11 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext('2d');
 
-canvas.width = 1875;
-canvas.height = 900;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight; 
+
+const mapImage = new Image();
+mapImage.src ='./assets/img/index/map.png';
 
 const collisionsMap = [];
 const entriesmap = [];
@@ -15,7 +18,7 @@ for (let i=0; i<entries.length; i+=90){
 const Bondaries = [];
 const Entries = [];
 
-const offset = {
+let offset = {
     x:-3150,
     y:-1700
 }
@@ -88,8 +91,7 @@ entriesmap.forEach((row, i) => {
 const foregroundImage = new Image();
 foregroundImage.src ='./assets/img/index/foregroundObjects.png';
 
-const mapImage = new Image();
-mapImage.src ='./assets/img/index/map.png';
+
 
 const brakeImage = new Image();
 brakeImage.src ='./assets/img/brake.png';
@@ -110,6 +112,9 @@ const keybindsImage = new Image();
 keybindsImage.src = './assets/img/keybind.png';
 
 mapImage.onload =()=>{
+    offset.x=-0,
+    offset.y=-0
+    console.log("coucou", offset.x)
     ctx.drawImage(
         mapImage,
         -3150,

@@ -77,7 +77,7 @@ body {
 }
 
 .row {
-    max-width: var(--container-max-width);
+    max-width: 75%;
     margin: 0 auto;
 }
 
@@ -512,6 +512,7 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .client__logo {
@@ -632,7 +633,7 @@ body:not(.user-is-tabbing) a:focus {
 .competences{
     background-color:#111111;
     margin: 0.5em;
-    width : 35vh;
+    width : 30%;
     flex-wrap: wrap;
     border-radius: 20px;
     transition-duration: 0.5s;
@@ -648,6 +649,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .projets span{
@@ -667,3 +669,68 @@ body:not(.user-is-tabbing) a:focus {
     text-align: center;
     color: #ff3258;
 }
+
+
+
+.competences_pro{
+    background-color:#111111;
+    margin: 0.5em;
+    width : 30%;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    padding: 1em;
+}
+
+.competences_pro:hover{
+    transition-duration: 0.5s;
+    box-shadow: #4aff32 0px 0px 20px;
+}
+
+.listecompetences_pro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.projets_pro span{
+    color: #6cff32;
+    text-decoration: underline;
+}
+
+.competences_pro strong{
+    color: #aeffae;
+}
+
+.projets_pro strong{
+    color: #73ff32;
+}
+
+.competences_pro h3{
+    text-align: center;
+    color: #32ff4d;
+}
+
+
+
+
+.competences-switch {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .switch-btn {
+    font-size: large;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ffffff00; /* Blue */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  
+  .competences-container div {
+    margin-bottom: 15px;
+  }

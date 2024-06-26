@@ -1,8 +1,8 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext('2d');
 
-canvas.width = 1875;
-canvas.height = 900;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight; 
 
 const collisionsMap = [];
 const entriesmap=[];
@@ -368,12 +368,15 @@ function redirection(entry){
     }
     if(entry.color=="green"){
         document.location.href="mailto:?to=leo.coste0605@gmail.com &subject=Contact%20for%20job";
+        document.location.href="contact.html";
     }
     if(entry.color=="blue"){
         document.location.href="mailto:?to=leo.coste0605@gmail.com &subject=Contact%20for%20request%20or%20questions";
+        document.location.href="contact.html";
     }
     if(entry.color=="pink"){
         document.location.href="mailto:?to=leo.coste0605@gmail.com &subject=Contact%20for%20others...";
+        document.location.href="contact.html";
     }
 }
 
